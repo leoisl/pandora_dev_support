@@ -12,10 +12,10 @@ Create a docker machine, e.g.:
 
 This will create a docker machine with default CPUs and Memory. It won't even be able to compile pandora. You can specify CPU count/memory when creating the machine using `docker-machine` args or can modify after creating the machine with:
 ```
-docker-machine stop
+docker-machine stop pandoravm
 VBoxManage modifyvm pandoravm --cpus 6
 VBoxManage modifyvm pandoravm --memory 12000
-docker-machine start
+docker-machine start pandoravm
 ```
 
 Check if your changes made effect:

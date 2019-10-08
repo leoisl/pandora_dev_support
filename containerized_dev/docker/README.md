@@ -23,10 +23,12 @@ Check if your changes made effect:
 
 ## Configuring docker compose in CLion
 
-In Clion, edit the configurations of `docker-compose` and add the env variables output by this command to the docker compose configuratiob:
+In Clion, edit the configurations of `docker-compose` and add the env variables output by this command to the docker compose configuration:
 
 `docker-machine env pandoravm`
 
 Also additionally add:
 
 `COMPOSE_TLS_VERSION=TLSv1_2`
+
+You now should be able to build and test.

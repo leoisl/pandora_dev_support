@@ -14,7 +14,7 @@ This will create a docker machine with default CPUs and Memory. It won't even be
 ```
 docker-machine stop
 VBoxManage modifyvm pandoravm --cpus 6
-VBoxManage modifyvm pandoravm --memory 12GB
+VBoxManage modifyvm pandoravm --memory 12000
 docker-machine start
 ```
 

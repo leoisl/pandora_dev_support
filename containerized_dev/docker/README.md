@@ -1,6 +1,6 @@
 # Docker configuration to isolate pandora dependencies from your own environment
 
-Make it work in CLion by following https://stackoverflow.com/a/55424792/5264075
+Make it work in CLion by following https://stackoverflow.com/a/55424792/5264075 . Note: `Dockerfile` and `docker-compose.yaml` are already configured for `pandora`.
 
 # Some stuff not mentioned in the stack overflow answer
 

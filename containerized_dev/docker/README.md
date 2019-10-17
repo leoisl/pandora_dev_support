@@ -31,4 +31,6 @@ Also additionally add:
 
 `COMPOSE_TLS_VERSION=TLSv1_2`
 
-You now should be able to build and test.
+You now should be able to build and test, e.g.:
+
+`DOCKER_TLS_VERIFY=1; DOCKER_HOST=tcp://192.168.99.100:2376; DOCKER_CERT_PATH=/home/leandro/.docker/machine/machines/pandoravm; DOCKER_MACHINE_NAME=pandoravm;COMPOSE_TLS_VERSION=TLSv1_2`

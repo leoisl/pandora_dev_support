@@ -20,8 +20,8 @@ RUN echo "export VISIBLE=now" >> /etc/profile
 # 22 for ssh server. 7777 for gdb server.
 EXPOSE 22 7777
 
-RUN useradd -ms /bin/bash debugger
-RUN echo 'debugger:pwd' | chpasswd
+RUN useradd -ms /bin/bash dev
+RUN echo 'dev:dev' | chpasswd
 
 ########################################################
 # Add custom packages and development environment here

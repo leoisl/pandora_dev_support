@@ -2,6 +2,11 @@
 
 ## TLDR: make it work after everything is set up:
 
+### Using Clion
+Go to services, start `Docker` and start the container (just clicking the green play button to start them).
+
+### Command-line
+
 1. `docker-machine start pandoravm` (start the vm)
 2. Run `docker-compose.yaml` in CLion
 

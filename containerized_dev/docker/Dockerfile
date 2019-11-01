@@ -39,4 +39,12 @@ RUN VERSION="1.2.11" && wget http://www.zlib.net/zlib-"$VERSION".tar.gz -O - | t
 RUN  wget https://sourceforge.net/projects/boost/files/boost/1.62.0/boost_1_62_0.tar.gz -O - | tar xzf - && cd boost_1_62_0 && ./bootstrap.sh --prefix=/usr/ --with-libraries=system,filesystem,iostreams,log,thread,date_time && ./b2 install
 ########################################################
 
+
+#============================================
+# GDB PRETTY PRINT
+#============================================
+COPY gdb_pretty_print/.gdbinit /home/dev/
+COPY gdb_pretty_print/gdb_renderer /home/dev/gdb_renderer
+
+
 CMD ["/usr/sbin/sshd", "-D"]

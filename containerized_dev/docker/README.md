@@ -5,9 +5,9 @@
 1. Run `docker-compose.yaml` in CLion.
   * NB: tick `--build` if you want to rebuild the image
 
-2. Tools -> CMake -> Reset Cache and Reload Project (this will synchronize files to the container, and run CMake)
+2. `Tools -> CMake -> Reset Cache and Reload Project` (this will synchronize files to the container, and run `CMake`)
 
-3. Build > Build Project
+3. `Build > Build Project`
 
 ## Configuration
 

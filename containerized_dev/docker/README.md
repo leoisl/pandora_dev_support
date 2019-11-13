@@ -16,3 +16,6 @@ Copy all these files to a folder called `docker_dev` in `pandora` root and make 
 ## Accessing files in the `docker-machine`
 
 `Tools -> Deployment -> Browse Remote Host`
+
+## lcov filtering line
+`lcov --remove pandora_test.info -o pandora_test.filtered.info '/usr/include/*' '/tmp/pandora/cgranges/cpp/*' '/tmp/pandora/cmake-build-debug/*' '/tmp/pandora/test/*'`

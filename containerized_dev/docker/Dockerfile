@@ -26,7 +26,7 @@ RUN echo 'dev:dev' | chpasswd
 ########################################################
 # Add custom packages and development environment here
 ########################################################
-RUN apt-get -y install git wget build-essential cmake seqtk valgrind
+RUN apt-get -y install git wget build-essential cmake seqtk valgrind lcov
 
 #============================================
 # INSTALL ZLIB

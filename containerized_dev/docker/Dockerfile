@@ -43,6 +43,7 @@ RUN  wget https://sourceforge.net/projects/boost/files/boost/1.62.0/boost_1_62_0
 #============================================
 # Additional stuff
 #============================================
+RUN apt-get -y install nano
 
 #============================================
 # GDB PRETTY PRINT
@@ -55,7 +56,10 @@ COPY gdb_pretty_print/gdb_renderer /home/dev/gdb_renderer
 #============================================
 RUN apt-get -y install clang-format
 
-
+#============================================
+# strace (track file operations)
+#============================================
+RUN apt-get -y install strace
 
 
 CMD ["/usr/sbin/sshd", "-D"]

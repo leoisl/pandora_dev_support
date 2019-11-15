@@ -41,10 +41,21 @@ RUN  wget https://sourceforge.net/projects/boost/files/boost/1.62.0/boost_1_62_0
 
 
 #============================================
+# Additional stuff
+#============================================
+
+#============================================
 # GDB PRETTY PRINT
 #============================================
 COPY gdb_pretty_print/.gdbinit /home/dev/
 COPY gdb_pretty_print/gdb_renderer /home/dev/gdb_renderer
+
+#============================================
+# clang-format
+#============================================
+RUN apt-get -y install clang-format
+
+
 
 
 CMD ["/usr/sbin/sshd", "-D"]
